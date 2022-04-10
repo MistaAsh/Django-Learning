@@ -1,4 +1,3 @@
-from email.quoprimime import body_check
 from django.db import models
 
 # Create your models here.
