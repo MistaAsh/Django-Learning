@@ -13,3 +13,6 @@ class Article(models.Model):
     # Built-in function that will view the Article as a title of the instance
     def __str__(self):  
         return self.title
+
+    def snippet(self):
+        return self.body[:100] + '.....'
