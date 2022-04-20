@@ -7,7 +7,7 @@ class Article(models.Model):
     slug = models.SlugField() 
     body = models.TextField()
     date = models.DateTimeField(auto_now_add = True)
-    # Add in thumbnail later
+    thumb = models.ImageField(default = 'Miku.jpg', blank = True)
     # Add in author later
 
     # Built-in function that will view the Article as a title of the instance
